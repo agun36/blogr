@@ -85,6 +85,8 @@ section{
 nav{
     @media screen and (max-width: 768px){
         padding: 3rem;
+        display: flex;
+        flex-direction: column;
         
     }
     .margin-right-nav{
@@ -165,6 +167,7 @@ nav{
                margin: auto;
                width: 90%;
                height: 60vh;
+               z-index: 999;
                box-shadow: 1px 1px 1px 1px $grey-300;
            } 
         //    .accordion{

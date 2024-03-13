@@ -101,12 +101,16 @@ nav{
     }
     .nav-link{
         color: $white-000!important;
+        &:hover{
+            text-decoration: underline!important;
+        }
     }
     .accordion-header{
         width: auto!important;
         margin: auto!important;
         color:$blue-600!important;
         border: none !important;
+        
     }
     .accordion-button{
         border: none;

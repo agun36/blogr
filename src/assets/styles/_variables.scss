@@ -1,0 +1,64 @@
+// Import your fonts here
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+// - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+// - Weights: 300, 600
+
+// - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+// - Weights: 400, 500, 700
+
+// Alerts
+$success: #2bad48;
+$warning: #f7e690;
+$error: #ff0000;
+$info: #418ed9;
+$tip: #4d4d4d;
+$power: #b85756;
+$pending: #fb8b18;
+$cancel: #cf142b;
+
+// Primary colors
+$red-300: hsl(355, 100%, 74%);
+$red-400: hsl(356, 100%, 66%);
+$blue-600: hsl(208, 49%, 24%);
+
+// base colors
+$very-dark-blue: hsl(237, 23%, 32%);
+$very-dark-grey-blue: hsl(237, 17%, 21%);
+
+// Neutrals & Shades
+$white-000: hsl(0, 0%, 100%);
+$grey-100: hsl(240, 2%, 79%);
+$grey-300: hsl(207, 13%, 34%);
+$grey-500: hsl(240, 10%, 16%);
+
+$theme-colors: (
+  "success": $success,
+  "warning": $warning,
+  "error": $error,
+  "info": $info,
+  "tip": $tip,
+  "power": $power,
+  "pending": $pending,
+  "cancel": $cancel,
+
+  "red-300": $red-300,
+  "red-400": $red-400,
+  "blue-600": $blue-600,
+
+  "white-000": $white-000,
+  "grey-100": $grey-100,
+  "grey-300": $grey-300,
+  "grey-500": $grey-500,
+);
+
+$spacers: (
+  "4_5": 2rem,
+  "5_5": 3.6rem,
+  6: 6rem,
+  7: 7rem,
+  8: 8rem,
+  9: 9rem,
+  10: 12rem,
+);
+@import "~bootstrap/scss/bootstrap";

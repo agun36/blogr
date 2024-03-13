@@ -1,0 +1,83 @@
+@import "../../assets/styles/variables.scss";
+.about-wrapper{
+    position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    margin-top: 8rem;
+    @media screen and (max-width: 768px){
+        margin-top: 3rem;
+        gap: 1rem;
+        text-align: center;
+    }
+      h1{
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: $blue-600;
+        @media screen and (max-width: 768px){
+            text-align: center;
+            font-size: 2.4rem;
+        }
+      }
+      h3{
+        font-size: 1.6rem;
+        color: $blue-600;
+        font-weight: 400;
+        text-align: left;
+        @media screen and (max-width: 768px){
+            text-align: center;
+            font-size: 1.4rem;
+        }
+      }
+      .about-wrapper__text{
+        margin-left: 12rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+            gap: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        .illustration-image{
+            width: 100%;
+          overflow: hidden;
+          img{
+            // max-width: 100%;
+            // height: auto;
+            object-fit: cover;
+            @media screen and (max-width: 768px){
+                width: 100%;
+                height: auto;
+                
+            }
+          }
+
+        }
+        .container-extension{
+            .text-color{
+                color: $grey-300;
+            }
+            .heading-color{
+                color: $blue-600;
+            }
+            .font-size-16{
+                font-size: 1.6rem;
+                
+            }
+           .text-mt{
+            margin-top: 2rem;
+           }
+           @media screen and (max-width: 768px){
+            text-align: center;
+            width: 70%;
+           }
+        }
+      }
+}

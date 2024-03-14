@@ -13027,98 +13027,208 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.about-wrapper {
+header {
+  height: 70vh;
+  background: url("../../assets/images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+  background-position: 25% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: block;
+  padding: 11rem 0;
+  border-bottom-left-radius: 6rem;
   font-family: "Overpass", sans-serif;
-  line-height: 2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 8rem;
+  font-optical-sizing: auto;
 }
 @media screen and (max-width: 768px) {
-  .about-wrapper {
-    margin-top: 3rem;
-    gap: 1rem;
-    text-align: center;
+  header {
+    position: relative;
+    height: 60vh;
+    padding: 1rem 0;
   }
 }
-.about-wrapper h1, .about-wrapper .h1 {
+@media screen and (max-width: 300px) {
+  header {
+    padding: 0rem;
+  }
+}
+header section {
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+}
+@media screen and (max-width: 300px) {
+  header section {
+    margin-top: 1rem;
+  }
+}
+header section h1, header section .h1 {
   font-family: "Overpass", sans-serif;
   font-optical-sizing: auto;
   font-size: 3.6rem;
+  font-style: bold;
+  color: hsl(0, 0%, 100%);
   font-weight: 700;
-  color: hsl(208, 49%, 24%);
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .about-wrapper h1, .about-wrapper .h1 {
-    text-align: center;
-    font-size: 2.4rem;
-  }
-}
-.about-wrapper h2, .about-wrapper .h2 {
+header section h2, header section .h2 {
   font-family: "Overpass", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.6rem;
-  color: hsl(208, 49%, 24%);
+  color: hsl(240, 2%, 79%);
   font-weight: 400;
-  text-align: left;
-  margin-bottom: 2rem;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .about-wrapper h2, .about-wrapper .h2 {
-    text-align: center;
-    font-size: 1.4rem;
-  }
+header section span {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
 }
-.about-wrapper .about-wrapper__text {
-  margin-left: 12rem;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-@media screen and (max-width: 768px) {
-  .about-wrapper .about-wrapper__text {
+@media screen and (max-width: 300px) {
+  header section span {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
   }
 }
-.about-wrapper .about-wrapper__text .illustration-image {
-  width: 100%;
-  overflow: hidden;
+header section span .btn-start {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%);
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.8rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.about-wrapper .about-wrapper__text .illustration-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
+header section span .btn-start:hover {
+  background-color: hsl(355, 100%, 74%) !important;
+  color: hsl(0, 0%, 100%);
 }
+header section span .btn-learn {
+  background-color: hsl(356, 100%, 66%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.8rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+header section span .btn-learn:hover {
+  background-color: hsl(0, 0%, 100%) !important;
+  color: hsl(356, 100%, 66%);
+}
+
 @media screen and (max-width: 768px) {
-  .about-wrapper .about-wrapper__text .illustration-image img {
-    width: 100%;
-    height: auto;
+  nav {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
   }
 }
-.about-wrapper .about-wrapper__text .container-extension .text-color {
-  color: hsl(207, 13%, 34%);
+nav .margin-right-nav {
+  margin-right: 6rem;
 }
-.about-wrapper .about-wrapper__text .container-extension .heading-color {
-  color: hsl(208, 49%, 24%);
-}
-.about-wrapper .about-wrapper__text .container-extension .font-size-16 {
+nav .font-size-16 {
   font-size: 1.6rem;
 }
-.about-wrapper .about-wrapper__text .container-extension .text-mt {
-  margin-top: 2rem;
+nav .hover_state:hover {
+  color: hsl(208, 49%, 24%) !important;
+  background-color: none;
 }
-@media screen and (max-width: 768px) {
-  .about-wrapper .about-wrapper__text .container-extension {
-    text-align: center;
-    width: 70%;
-  }
+nav .nav-link {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  color: hsl(0, 0%, 100%) !important;
+}
+nav .nav-link:hover {
+  text-decoration: underline !important;
+}
+nav .accordion-header {
+  width: auto !important;
+  margin: auto !important;
+  color: hsl(208, 49%, 24%) !important;
+  border: none !important;
+}
+nav .accordion-button {
+  border: none;
+  font-size: 2rem;
+}
+nav button:not(:disabled) {
+  width: auto;
+  border: none;
+}
+nav .accordion-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: none !important;
+  color: hsl(208, 49%, 24%) !important;
+}
+nav .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  border: none !important;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .accordion-collapse.collapse.show {
+  background-color: hsl(240, 2%, 79%) !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 0.6rem;
+  margin-top: 2rem;
+  border: none !important;
+}
+nav .btn-sign_up {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  color: hsl(356, 100%, 66%);
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.8rem;
+  transition: all 0.3s ease;
+}
+nav .btn-sign_up:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(356, 100%, 66%);
+}
+nav .bg-menu {
+  background-color: white;
+  border-radius: 0.6rem;
+  padding: 3rem 0;
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 38rem;
+  height: 40vh;
+  z-index: 999;
+  box-shadow: 1px 1px 1px 1px hsl(207, 13%, 34%);
+}
+nav .details {
+  width: 80%;
+  margin: 1rem auto;
+  border-top: 1px solid hsl(207, 13%, 34%);
+}
+nav .details .btn-login {
+  color: hsl(208, 49%, 24%) !important;
+  font-size: 1.6rem;
+}
+nav .details .btn-login:hover {
+  text-decoration: underline;
+}
+nav .details .btn-sign_up {
+  background: linear-gradient(to right, hsl(355, 100%, 74%), hsl(356, 100%, 66%));
+  color: hsl(0, 0%, 100%);
+  border-radius: 1.8rem;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.8rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.min.css.map */

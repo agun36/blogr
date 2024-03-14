@@ -15,7 +15,7 @@ export const NavbarDesktop = () => {
         <Nav>
           <Nav className="me-auto d-flex align-items-center ">
             <Navbar.Brand href="#home" className='margin-right-nav'><img src={logo} alt="blogr logo" /></Navbar.Brand>
-            <NavDropdown as={"h1"} title="Product" id="collapsible-nav-dropdown" className='font-size-16'>
+            <NavDropdown as={"h1"} title="Product" id="collapsible-nav-dropdown-1" className='font-size-16'>
               <NavDropdown.Item href="#action/3.1" className='font-size-16 hover_state'>Overview</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className='font-size-16 hover_state'>
                 Pricing
@@ -28,7 +28,7 @@ export const NavbarDesktop = () => {
               Integrations
               </NavDropdown.Item>
             </NavDropdown>     
-            <NavDropdown as={"h1"} title="Company" id="collapsible-nav-dropdown" className='font-size-16'>
+            <NavDropdown as={"h1"} title="Company" id="collapsible-nav-dropdown-2" className='font-size-16'>
               <NavDropdown.Item href="#action/3.1" className='font-size-16 hover_state'>About</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2"  className='font-size-16 hover_state'>
               Team
@@ -39,7 +39,7 @@ export const NavbarDesktop = () => {
               Careers
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown as={"h1"}  title="Connect" id="collapsible-nav-dropdown" className='font-size-16' >
+            <NavDropdown as={"h1"}  title="Connect" id="collapsible-nav-dropdown-3" className='font-size-16' >
               <NavDropdown.Item href="#action/3.1" className='font-size-16 hover_state'>Contact</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" className='font-size-16 hover_state'>
               Newsletter

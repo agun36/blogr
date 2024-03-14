@@ -32,7 +32,7 @@ const NavbarMobile = () => {
                                     <Accordion style={{margin:"auto", width:"9rem", border:"none", backgroundColor: 'transparent', textAlign:"center"}}>
                                         <Accordion.Item style={{border:"none", backgroundColor: 'transparent', textAlign:"center"}} eventKey="0">
                                             <Accordion.Header className='accordion-header font-size-16' style={{margin:"auto", width:"9rem", border:"none", backgroundColor: 'transparent'}}>Product</Accordion.Header>
-                                            <Accordion.Body style={{lineHeight:"3rem", textAlign:"center", paddingLeft:"5rem", paddingRight:"5rem"}} >
+                                            <Accordion.Body style={{lineHeight:"3rem", textAlign:"center", paddingLeft:"12rem", paddingRight:"12rem"}} >
                                                 <AccordionItem className='font-size-16' style={{border:"none", backgroundColor: 'transparent'}}>
                                                     Overview
                                                 </AccordionItem>
@@ -52,7 +52,7 @@ const NavbarMobile = () => {
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1" style={{border:"none", backgroundColor: 'transparent'}}>
                                             <Accordion.Header>Company</Accordion.Header>
-                                            <Accordion.Body style={{lineHeight:"3rem", textAlign:"center", paddingLeft:"5rem", paddingRight:"5rem"}}>
+                                            <Accordion.Body style={{lineHeight:"3rem", textAlign:"center", paddingLeft:"12rem", paddingRight:"12rem"}}>
                                                 <AccordionItem className='font-size-16' style={{border:"none", backgroundColor: 'transparent'}}>
                                                     About
                                                 </AccordionItem>

@@ -204,43 +204,13 @@ nav {
         left: 0;
         right: 0;
         margin: auto;
-        width: 90%;
-        height: 60vh;
+        width: 38rem;
+        height: 40vh;
         z-index: 999;
         box-shadow: 1px 1px 1px 1px $grey-300;
     }
 
-    //    .accordion{
-    //     background-color: "transparent"!important;
-    //     border: none!important;
-    //     text-align: center !important;
-    //    }
-    //    .accordion-body{
-    //     margin: 2rem auto;
-    //     padding: 2rem 4rem;
-    //     line-height: 2.5rem;
-    //     background-color: $grey-100;
-    //    }
-    //    .accordion-button{
-    //        background-color: "transparent"!important;
-    //        color: $blue-600!important;
-    //        width: auto;
-    //        font-size: 1.6rem;
-    //        border: none !important;
-    //        left: 100%;
-    //    }
-    //    .accordion-item{
-    //     border: none!important;
-    //    }
-    //    .accordion-button.collapsed{
-    //     left: 100%;
-    //     font-size: 1.6rem;
-    //     color: $blue-600!important;
-    //    }
-    //    .accordion-button:has(.collapsed){
-    //     color: $blue-600!important;
-    //     right: 100%;
-    //    }
+    
     .details {
         width: 80%;
         margin: 1rem auto;

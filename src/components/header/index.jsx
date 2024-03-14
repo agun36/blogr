@@ -25,7 +25,7 @@ export const Header = () => {
       {isMobile ? <NavbarMobile /> : <NavbarDesktop />}
       <section>
         <h1 >A modern publishing platform</h1>
-        <h3>Grow your audience and build your online brand</h3>
+        <h2>Grow your audience and build your online brand</h2>
         <span>
           <Button variant="white-000" className="border-0 btn-start">
             Start for Free

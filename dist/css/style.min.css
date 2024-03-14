@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -13027,134 +13027,98 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.infrastructure-wrapper {
-  background: url("../../assets/images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-  background-repeat: no-repeat;
-  background-position: -30% 85%;
-  background-size: auto;
-  color: hsl(0, 0%, 100%);
+.about-wrapper {
   font-family: "Overpass", sans-serif;
-  padding: 6rem 8rem;
   line-height: 2rem;
-  border-top-right-radius: 5rem;
-  border-bottom-left-radius: 5rem;
-  margin-top: 12rem;
-}
-@media screen and (max-width: 768px) {
-  .infrastructure-wrapper {
-    padding: 2rem 2rem;
-    line-height: 1.6rem;
-    margin-top: 36rem;
-    background-position: 50% 100%;
-  }
-}
-.infrastructure-wrapper .infrastructure-wrapper__content {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 3rem;
+  margin-top: 8rem;
 }
 @media screen and (max-width: 768px) {
-  .infrastructure-wrapper .infrastructure-wrapper__content {
-    flex-direction: column;
-  }
-}
-.infrastructure-wrapper .infrastructure-wrapper__content img {
-  margin-bottom: -22rem;
-  margin-top: -13rem;
-}
-@media screen and (max-width: 768px) {
-  .infrastructure-wrapper .infrastructure-wrapper__content img {
-    margin-bottom: 10rem;
-    margin-top: -33rem;
-    width: 100%;
-  }
-}
-.infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text {
-  margin-left: 4rem;
-  width: 40%;
-}
-.infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text h1, .infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text .h1 {
-  margin-bottom: 2.5rem;
-  font-size: 3.6rem;
-  font-weight: 700;
-}
-@media screen and (max-width: 768px) {
-  .infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text h1, .infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text .h1 {
-    font-size: 2.4rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .infrastructure-wrapper .infrastructure-wrapper__content .infrastructure-wrapper__content__text {
-    margin-left: 0;
-    width: 70%;
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-}
-
-.tooling-wrapper {
-  margin-top: 18rem;
-}
-.tooling-wrapper .tooling-wrapper__content {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 4rem;
-}
-@media screen and (max-width: 768px) {
-  .tooling-wrapper .tooling-wrapper__content {
-    flex-direction: column-reverse;
+  .about-wrapper {
+    margin-top: 3rem;
     gap: 1rem;
+    text-align: center;
   }
 }
-.tooling-wrapper .tooling-wrapper__content picture img, .tooling-wrapper .tooling-wrapper__content picture source {
-  margin-right: -12rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: right;
-     object-position: right;
-}
-@media screen and (max-width: 768px) {
-  .tooling-wrapper .tooling-wrapper__content picture img, .tooling-wrapper .tooling-wrapper__content picture source {
-    margin-right: 0;
-    width: 100%;
-  }
-}
-.tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text {
-  width: 40%;
-  padding-inline: 4rem;
-}
-.tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text h1, .tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text .h1 {
-  margin-bottom: 2rem;
+.about-wrapper h1, .about-wrapper .h1 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
   font-size: 3.6rem;
   font-weight: 700;
   color: hsl(208, 49%, 24%);
 }
 @media screen and (max-width: 768px) {
-  .tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text h1, .tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text .h1 {
+  .about-wrapper h1, .about-wrapper .h1 {
     text-align: center;
     font-size: 2.4rem;
   }
 }
-.tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text p {
-  margin-bottom: 6rem;
-  color: hsl(240, 2%, 79%);
+.about-wrapper h2, .about-wrapper .h2 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+  color: hsl(208, 49%, 24%);
   font-weight: 400;
   text-align: left;
+  margin-bottom: 2rem;
 }
 @media screen and (max-width: 768px) {
-  .tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text p {
+  .about-wrapper h2, .about-wrapper .h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+.about-wrapper .about-wrapper__text {
+  margin-left: 12rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .about-wrapper .about-wrapper__text {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 }
+.about-wrapper .about-wrapper__text .illustration-image {
+  width: 100%;
+  overflow: hidden;
+}
+.about-wrapper .about-wrapper__text .illustration-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media screen and (max-width: 768px) {
-  .tooling-wrapper .tooling-wrapper__content .tooling-wrapper__content__text {
-    width: 70%;
-    text-align: center;
-    margin-bottom: 5rem;
+  .about-wrapper .about-wrapper__text .illustration-image img {
+    width: 100%;
+    height: auto;
   }
-}/*# sourceMappingURL=style.min.css.map */color: hsl(0, 0%, 100%);
-  border-radius: 1.8rem;
+}
+.about-wrapper .about-wrapper__text .container-extension .text-color {
+  color: hsl(207, 13%, 34%);
+}
+.about-wrapper .about-wrapper__text .container-extension .heading-color {
+  color: hsl(208, 49%, 24%);
+}
+.about-wrapper .about-wrapper__text .container-extension .font-size-16 {
   font-size: 1.6rem;
-  padding: 0.8rem 2.8rem;
+}
+.about-wrapper .about-wrapper__text .container-extension .text-mt {
   margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .about-wrapper .about-wrapper__text .container-extension {
+    text-align: center;
+    width: 70%;
+  }
 }/*# sourceMappingURL=style.min.css.map */

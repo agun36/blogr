@@ -1,86 +1,106 @@
 @import "../../assets/styles/variables.scss";
-.about-wrapper{
+
+.about-wrapper {
     font-family: "Overpass", sans-serif;
     line-height: 2rem;
     position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     margin-top: 8rem;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         margin-top: 3rem;
         gap: 1rem;
         text-align: center;
     }
-      h1{
+
+    h1 {
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
         font-size: 3.6rem;
         font-weight: 700;
         color: $blue-600;
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             text-align: center;
             font-size: 2.4rem;
         }
-      }
-      h3{
+    }
+
+    h2 {
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
         font-size: 1.6rem;
         color: $blue-600;
         font-weight: 400;
         text-align: left;
         margin-bottom: 2rem;
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             text-align: center;
             font-size: 1.4rem;
         }
-      }
-      .about-wrapper__text{
+    }
+
+    .about-wrapper__text {
         margin-left: 12rem;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         gap: 3rem;
-        @media screen and (max-width: 768px){
+
+        @media screen and (max-width: 768px) {
             flex-direction: column;
             gap: 1rem;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
         }
-        .illustration-image{
+
+        .illustration-image {
             width: 100%;
-          overflow: hidden;
-          img{
-            // max-width: 100%;
-            // height: auto;
-            object-fit: cover;
-            @media screen and (max-width: 768px){
-                width: 100%;
-                height: auto;
-                
+            overflow: hidden;
+
+            img {
+                // max-width: 100%;
+                // height: auto;
+                object-fit: cover;
+
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                    height: auto;
+
+                }
             }
-          }
 
         }
-        .container-extension{
-            .text-color{
+
+        .container-extension {
+            .text-color {
                 color: $grey-300;
             }
-            .heading-color{
+
+            .heading-color {
                 color: $blue-600;
             }
-            .font-size-16{
+
+            .font-size-16 {
                 font-size: 1.6rem;
-                
+
             }
-           .text-mt{
-            margin-top: 2rem;
-           }
-           @media screen and (max-width: 768px){
-            text-align: center;
-            width: 70%;
-           }
+
+            .text-mt {
+                margin-top: 2rem;
+            }
+
+            @media screen and (max-width: 768px) {
+                text-align: center;
+                width: 70%;
+            }
         }
-      }
+    }
 }

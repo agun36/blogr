@@ -15,7 +15,7 @@ export const About = () => {
         </div>
         <div className='container-extension'>
           <div className='mb-6'>
-            <h3 className='font-size-16 heading-color'>Introducing an extensible editor</h3>
+            <h2 className='font-size-16 heading-color'>Introducing an extensible editor</h2>
             <p className='text-mt text-color'>
               Blogr features an exceedingly intuitive interface which lets you focus on
               one thing: creating content. The editor supports management of
@@ -25,7 +25,7 @@ export const About = () => {
             </p>
           </div>
           <div>
-            <h3 className='font-size-16 heading-color'>Robust content management</h3>
+            <h2 className='font-size-16 heading-color'>Robust content management</h2>
             <p className='text-mt text-color'>
               Flexible content management enables users to move through posts. Increase
               the usability of your blog by adding customized categories, sections,

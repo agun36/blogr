@@ -1,228 +1,269 @@
 @import "../../assets/styles/variables.scss";
 
 
-header{
+header {
     height: 70vh;
     background: url("../../assets/images/bg-pattern-intro-desktop.svg"), linear-gradient(to right, $red-300, $red-400);
     background-position: 25% 50%;
     background-repeat: no-repeat;
     background-size: auto;
     display: block;
-    padding:11rem 0;
+    padding: 11rem 0;
     border-bottom-left-radius: 6rem;
-    @media screen and (max-width: 768px){
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+
+    @media screen and (max-width: 768px) {
         position: relative;
         height: 60vh;
         padding: 1rem 0;
     }
-    @media screen and (max-width:300px){
+
+    @media screen and (max-width:300px) {
         padding: 0rem;
-        
+
     }
-section{
-    margin-top: 6rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    @media screen and (max-width:300px){
-        margin-top: 1rem;
-    }
-    h1{
-        font-size: 3.6rem;
-        color: $white-000;
-        font-family: "DM Serif Display", serif;
-        font-weight: 600;
-        text-align: center;
-    }
-    h3{
-        font-size: 1.6rem;
-        color: $grey-100;
-        font-weight: 400;
-        text-align: center;
-    }
-    span{
-        @media screen and (max-width:300px){
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            
+
+    section {
+        margin-top: 6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+
+        @media screen and (max-width:300px) {
+            margin-top: 1rem;
         }
-        .btn-start{
-            background-color: $white-000; ;
-            color: $red-400;
-            border-radius: 1.8rem;
-            font-size: 1.6rem;
-            padding: .8rem 2.8rem;
-            margin: 0 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover{
-                background-color: $red-300!important;
-                color: $white-000;
-            }
-        }
-       .btn-learn{
-            background-color: $red-400;
+
+        h1 {
+            font-family: "Overpass", sans-serif;
+            font-optical-sizing: auto;
+            font-size: 3.6rem;
             color: $white-000;
-            border-radius: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: "Overpass", sans-serif;
+            font-optical-sizing: auto;
             font-size: 1.6rem;
-            padding: .8rem 2.8rem;
-            margin: 0 0.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            &:hover{
-                background-color: $white-000!important;
+            color: $grey-100;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        span {
+            font-family: "Overpass", sans-serif;
+            font-optical-sizing: auto;
+
+            @media screen and (max-width:300px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+            }
+
+            .btn-start {
+                background-color: $white-000;
+                ;
                 color: $red-400;
+                border-radius: 1.8rem;
+                font-size: 1.6rem;
+                padding: .8rem 2.8rem;
+                margin: 0 0.5rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $red-300 !important;
+                    color: $white-000;
+                }
+            }
+
+            .btn-learn {
+                background-color: $red-400;
+                color: $white-000;
+                border-radius: 1.8rem;
+                font-size: 1.6rem;
+                padding: .8rem 2.8rem;
+                margin: 0 0.5rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $white-000 !important;
+                    color: $red-400;
+                }
             }
         }
     }
-}
 }
 
-nav{
-    @media screen and (max-width: 768px){
+nav {
+    @media screen and (max-width: 768px) {
         padding: 3rem;
         display: flex;
         flex-direction: column;
-        
+
     }
-    .margin-right-nav{
+
+    .margin-right-nav {
         margin-right: 6rem;
     }
-    .font-size-16{
+
+    .font-size-16 {
         font-size: 1.6rem;
     }
-    .hover_state{
-        &:hover{
-            color: $blue-600!important;
+
+    .hover_state {
+        &:hover {
+            color: $blue-600 !important;
             background-color: none;
         }
     }
-    .nav-link{
-        color: $white-000!important;
-        &:hover{
-            text-decoration: underline!important;
+
+    .nav-link {
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
+        color: $white-000 !important;
+
+        &:hover {
+            text-decoration: underline !important;
         }
     }
-    .accordion-header{
-        width: auto!important;
-        margin: auto!important;
-        color:$blue-600!important;
+
+    .accordion-header {
+        width: auto !important;
+        margin: auto !important;
+        color: $blue-600 !important;
         border: none !important;
-        
+
     }
-    .accordion-button{
+
+    .accordion-button {
         border: none;
         font-size: 2rem;
     }
-    button:not(:disabled){
+
+    button:not(:disabled) {
         width: auto;
         border: none;
     }
-    .accordion-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: none !important;
-    color:$blue-600!important;
-    // background-color: none!important;
+
+    .accordion-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: none !important;
+        color: $blue-600 !important;
+        // background-color: none!important;
     }
-    .accordion-button:not(.collapsed){
-        background-color: transparent!important;
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent !important;
         border: none !important;
         width: fit-content;
     }
-    .accordion-collapse.collapse.show{
-        background-color: $grey-100!important;
+
+    .accordion-collapse.collapse.show {
+        background-color: $grey-100 !important;
         width: fit-content;
-        border-radius:.6rem;
+        border-radius: .6rem;
         margin-top: 2rem;
         border: none !important;
         // background-color: none !important;
     }
 
-    .btn-sign_up{
+    .btn-sign_up {
+        font-family: "Overpass", sans-serif;
+        font-optical-sizing: auto;
         color: $red-400;
         border-radius: 1.8rem;
         font-size: 1.6rem;
         padding: .8rem 2.8rem;
         transition: all 0.3s ease;
-        &:hover{
+
+        &:hover {
             color: $white-000;
             background-color: $red-400;
         }
     }
-           .bg-menu{
-               background-color: white;
-               border-radius: .6rem;
-               padding: 3rem 0;
-               position: absolute;
-               top: 20rem;
-               left: 0;
-               right: 0;
-               margin: auto;
-               width: 90%;
-               height: 60vh;
-               z-index: 999;
-               box-shadow: 1px 1px 1px 1px $grey-300;
-           } 
-        //    .accordion{
-        //     background-color: "transparent"!important;
-        //     border: none!important;
-        //     text-align: center !important;
-        //    }
-        //    .accordion-body{
-        //     margin: 2rem auto;
-        //     padding: 2rem 4rem;
-        //     line-height: 2.5rem;
-        //     background-color: $grey-100;
-        //    }
-        //    .accordion-button{
-        //        background-color: "transparent"!important;
-        //        color: $blue-600!important;
-        //        width: auto;
-        //        font-size: 1.6rem;
-        //        border: none !important;
-        //        left: 100%;
-        //    }
-        //    .accordion-item{
-        //     border: none!important;
-        //    }
-        //    .accordion-button.collapsed{
-        //     left: 100%;
-        //     font-size: 1.6rem;
-        //     color: $blue-600!important;
-        //    }
-        //    .accordion-button:has(.collapsed){
-        //     color: $blue-600!important;
-        //     right: 100%;
-        //    }
-           .details{
-            width: 80%;
-            margin: 1rem auto;
-            border-top:1px solid $grey-300;
 
-            .btn-login{
-                color: $blue-600 !important;
-                font-size: 1.6rem;
+    .bg-menu {
+        background-color: white;
+        border-radius: .6rem;
+        padding: 3rem 0;
+        position: absolute;
+        top: 20rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        height: 60vh;
+        z-index: 999;
+        box-shadow: 1px 1px 1px 1px $grey-300;
+    }
 
-                &:hover{
-                    text-decoration: underline;
-                }
-               }
-               .btn-sign_up{
-                background: linear-gradient(to right, $red-300, $red-400);
-                color: $white-000;
-                border-radius: 1.8rem;
-                font-size: 1.6rem;
-                padding: .8rem 2.8rem;
-                margin-top: 2rem;
-               }        
-           }
+    //    .accordion{
+    //     background-color: "transparent"!important;
+    //     border: none!important;
+    //     text-align: center !important;
+    //    }
+    //    .accordion-body{
+    //     margin: 2rem auto;
+    //     padding: 2rem 4rem;
+    //     line-height: 2.5rem;
+    //     background-color: $grey-100;
+    //    }
+    //    .accordion-button{
+    //        background-color: "transparent"!important;
+    //        color: $blue-600!important;
+    //        width: auto;
+    //        font-size: 1.6rem;
+    //        border: none !important;
+    //        left: 100%;
+    //    }
+    //    .accordion-item{
+    //     border: none!important;
+    //    }
+    //    .accordion-button.collapsed{
+    //     left: 100%;
+    //     font-size: 1.6rem;
+    //     color: $blue-600!important;
+    //    }
+    //    .accordion-button:has(.collapsed){
+    //     color: $blue-600!important;
+    //     right: 100%;
+    //    }
+    .details {
+        width: 80%;
+        margin: 1rem auto;
+        border-top: 1px solid $grey-300;
 
-               
+        .btn-login {
+            color: $blue-600 !important;
+            font-size: 1.6rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .btn-sign_up {
+            background: linear-gradient(to right, $red-300, $red-400);
+            color: $white-000;
+            border-radius: 1.8rem;
+            font-size: 1.6rem;
+            padding: .8rem 2.8rem;
+            margin-top: 2rem;
+        }
+    }
+
+
 }
